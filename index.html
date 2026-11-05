@@ -13,8 +13,9 @@
     --bone:#F1ECDE;
     --sand:#E4DAC3;
     --sand-line:#D6C9A9;
-    --clay:#AE4E2C;
-    --clay-dark:#8E3D22;
+    --clay:#E2CFA8;
+    --clay-dark:#CDB68A;
+    --clay-on-light:#A8885A;
     --sage:#6C8564;
     --sage-soft:#DCE3D4;
     --white:#FFFDF8;
@@ -40,9 +41,11 @@
     display:inline-flex; align-items:center; gap:8px;
     font-family:'IBM Plex Sans Arabic', sans-serif;
     font-size:13px; letter-spacing:.04em; font-weight:500;
-    color:var(--clay); margin-bottom:14px;
+    color:var(--clay-on-light); margin-bottom:14px;
   }
-  .eyebrow::before{ content:""; width:16px; height:1px; background:var(--clay); }
+  .eyebrow::before{ content:""; width:16px; height:1px; background:var(--clay-on-light); }
+  .process .eyebrow{ color:var(--clay); }
+  .process .eyebrow::before{ background:var(--clay); }
 
   /* ---------- ARC DIVIDER (signature motif) ---------- */
   .arc-divider{ width:100%; height:36px; display:flex; align-items:center; justify-content:center; opacity:.55; }
@@ -71,7 +74,7 @@
     transition:.2s ease;
   }
   .social-links a svg{ width:18px; height:18px; }
-  .social-links a:hover{ border-color:var(--clay); color:var(--clay); background:rgba(174,78,44,.1); }
+  .social-links a:hover{ border-color:var(--clay); color:var(--clay); background:rgba(226,207,168,.1); }
   .burger{ display:none; }
 
   /* ---------- HERO ---------- */
@@ -97,7 +100,7 @@
   }
   .doctor-badge{
     display:inline-flex; align-items:center; gap:9px;
-    background:rgba(241,236,222,.09); border:1px solid rgba(174,78,44,.4);
+    background:rgba(241,236,222,.09); border:1px solid rgba(226,207,168,.4);
     border-radius:100px; padding:9px 18px; margin-bottom:22px;
     font-size:14.5px; color:rgba(241,236,222,.85);
   }
@@ -111,7 +114,7 @@
     padding:15px 28px; border-radius:100px; font-weight:700; font-size:15px;
     transition:.2s ease; border:1.5px solid transparent; cursor:pointer;
   }
-  .btn-primary{ background:var(--clay); color:var(--white); }
+  .btn-primary{ background:var(--clay); color:var(--ink); }
   .btn-primary:hover{ background:var(--clay-dark); transform:translateY(-1px); }
   .btn-ghost{ border-color:rgba(241,236,222,.35); color:var(--bone); }
   .btn-ghost:hover{ border-color:var(--bone); background:rgba(241,236,222,.06); }
@@ -179,7 +182,7 @@
     background:var(--white); border:1px solid var(--sand-line); border-radius:16px;
     padding:22px 26px;
   }
-  .nutrition-note svg{ width:34px; height:34px; flex-shrink:0; color:var(--clay); }
+  .nutrition-note svg{ width:34px; height:34px; flex-shrink:0; color:var(--clay-on-light); }
   .nutrition-note p{ font-size:15px; color:var(--ink-60); }
   .nutrition-note b{ color:var(--ink); font-weight:700; }
 
@@ -201,7 +204,7 @@
   /* ---------- QUOTE ---------- */
   .quote-section{ background:var(--sand); }
   .quote-box{ max-width:760px; margin:0 auto; text-align:center; }
-  .quote-box .mark-q{ font-family:'El Messiri'; font-size:64px; color:var(--clay); line-height:.5; display:block; margin-bottom:8px; }
+  .quote-box .mark-q{ font-family:'El Messiri'; font-size:64px; color:var(--clay-on-light); line-height:.5; display:block; margin-bottom:8px; }
   .quote-box p{ font-size:24px; font-family:'El Messiri'; font-weight:600; line-height:1.5; color:var(--ink); }
   .quote-box .who{ margin-top:20px; font-size:14px; color:var(--ink-60); }
 
@@ -299,7 +302,7 @@
     <div>
       <div class="eyebrow">عيادة علاج طبيعي و تغذيه علاجيه</div>
       <div class="doctor-badge">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#AE4E2C" stroke-width="2"><path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9"/></svg>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E2CFA8" stroke-width="2"><path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9"/></svg>
         <span>تحت إشراف <b>د.شيماء هشام</b> —  أخصائية العلاج طبيعي والتغذيه العلاجيه </span>
       </div>
       <h1>كل درجة تتحرّكها خطوة <span>أقرب للشفاء</span></h1>
@@ -325,8 +328,8 @@
         <circle cx="210" cy="230" r="5" fill="#F1ECDE"/>
         <line x1="210" y1="230" x2="60" y2="230" stroke="#F1ECDE" stroke-width="4" stroke-linecap="round"/>
         <g class="sweep-arm">
-          <line x1="210" y1="230" x2="70" y2="150" stroke="#AE4E2C" stroke-width="4" stroke-linecap="round"/>
-          <circle cx="70" cy="150" r="6" fill="#AE4E2C"/>
+          <line x1="210" y1="230" x2="70" y2="150" stroke="#E2CFA8" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="70" cy="150" r="6" fill="#E2CFA8"/>
         </g>
         <circle cx="210" cy="230" r="9" fill="#0F2E2C" stroke="#F1ECDE" stroke-width="2"/>
       </svg>
